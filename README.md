@@ -7,9 +7,9 @@ A plugin for ExpressionEngine that allows for more flexibility when nesting modu
 Usage
 -------
 
-```
 Requires ExpressionEngine 2.5.0+ and PHP 5.3+
 
+```
 {exp:channel:entries channel="news"}
         {exp:vmg_nested:channel:entries channel="blog" prefix="blog"}
                 {blog:title}
