@@ -1,4 +1,4 @@
-VMG-Nested
+VMG Nested
 ==========
 
 A plugin for ExpressionEngine that allows for more flexibility when nesting module tags with the ability to add variable prefixes to any tags. Also allows exp:channel:entries tags to be nested without the need for embeds.
