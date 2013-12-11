@@ -3,6 +3,8 @@ VMG Nested
 
 An extremely flexible plugin for ExpressionEngine that allows for more flexibility when nesting any module and plugin tags within others, including the ability to add variable prefixes to any tags. **VMG Nested supports third party modules and plugins**.
 
+You can nest the same tag multiple times, with different parameter prefixes on each level.
+
 One of many uses for this is allowing exp:channel:entries tags to be nested inside of each other without the need for embeds.
 
 Installation
