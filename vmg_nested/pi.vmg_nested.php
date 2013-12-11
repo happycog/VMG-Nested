@@ -12,7 +12,7 @@
 
 $plugin_info = array(
 	'pi_name'		=> 'VMG Nested',
-	'pi_version'	=> '0.1',
+	'pi_version'	=> '1.0',
 	'pi_author'		=> 'Andrew Kaslick',
 	'pi_author_url'	=> 'http://www.vectormediagroup.com',
 	'pi_description'=> 'Allows for more flexibility when nesting module tags with the ability to add variable prefixes to any tags. Also allows exp:channel:entries tags to be nested without the need for embeds.',
