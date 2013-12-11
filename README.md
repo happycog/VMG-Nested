@@ -1,13 +1,16 @@
 VMG Nested
-==========
+=====
 
 A plugin for ExpressionEngine that allows for more flexibility when nesting module tags with the ability to add variable prefixes to any tags. Also allows exp:channel:entries tags to be nested without the need for embeds.
 
+Installation
+------
+
+* Add the vmg_nested folder to system/expressionengine/third_party
+* Check that it shows in the control panel Plugins list
 
 Usage
 -------
-
-Requires ExpressionEngine 2.5.0+ and PHP 5.3+
 
 ```
 {exp:channel:entries channel="news"}
@@ -34,3 +37,14 @@ Requires ExpressionEngine 2.5.0+ and PHP 5.3+
         {/exp:vmg_nested:profile:view}
 {/exp:channel:entries}
 ```
+
+Compatibility
+---------
+
+Requires ExpressionEngine 2.5.0+ and PHP 5.3+
+
+Warranty/License
+--------
+There's no warranty of any kind. If you find a bug, please report it or submit a pull request with a fix. It's provided completely as-is; if something breaks, you lose data, or something else bad happens, the author(s) and owner(s) of this add-on are in no way responsible.
+
+This add-on is owned by [Vector Media Group, Inc](http://www.vectormediagroup.com). You can modify it and use it for your own personal or commercial projects, but you can't redistribute it.
