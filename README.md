@@ -1,7 +1,7 @@
 VMG Nested
 =====
 
-An extremely flexible plugin for ExpressionEngine that allows for more flexibility when nesting any module and plugin tags within others, including the ability to add variable prefixes to any tags.
+An extremely flexible plugin for ExpressionEngine that allows for more flexibility when nesting any module and plugin tags within others, including the ability to add variable prefixes to any tags. **VMG Nested supports third party modules and plugins**.
 
 One of many uses for this is allowing exp:channel:entries tags to be nested inside of each other without the need for embeds.
 
@@ -50,7 +50,9 @@ For instance, let's say you want to nest an `{exp:channel:entries}` tag inside a
 Compatibility
 ---------
 
-Requires ExpressionEngine 2.5.0+ and PHP 5.3+
+We've tested this with a number of third party addons and haven't found any issues, but let us know if you find anything it doesn't work with. It'd be helpful to supply relevant version numbers.
+
+VMG Nested requires ExpressionEngine 2.5.0+ and PHP 5.3+.
 
 Warranty/License
 --------
