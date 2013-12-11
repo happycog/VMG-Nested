@@ -1,7 +1,9 @@
 VMG Nested
 =====
 
-A plugin for ExpressionEngine that allows for more flexibility when nesting module tags with the ability to add variable prefixes to any tags. Also allows exp:channel:entries tags to be nested without the need for embeds.
+An extremely flexible plugin for ExpressionEngine that allows for more flexibility when nesting any module and plugin tags within others, including the ability to add variable prefixes to any tags.
+
+One of many uses for this is allowing exp:channel:entries tags to be nested inside of each other without the need for embeds.
 
 Installation
 ------
@@ -11,6 +13,10 @@ Installation
 
 Usage
 -------
+
+For best results, use the `prefix=''` parameter to avoid collisions. You can use the other module or plugin tag as you normally would, but instead of starting the tag name `{exp:`, start it with `{exp:vmg_nested:`. 
+
+For instance, let's say you want to nest an `{exp:channel:entries}` tag inside another one. Use the outside one as normal, and then inside use something like `{exp:vmg_nested:channel_entries prefix='inner'}` (with any prefix you'd like).
 
 ```
 {exp:channel:entries channel="news"}
@@ -24,12 +30,15 @@ Usage
 
         {!-- Third Party Modules. All tag parameters from the original
                 module tag can be used. --}
+
+        {!-- Example: Solspace Tag --}
         {exp:vmg_nested:tag:entries prefix="tag_entry"}
                 {tag_entry:title}
                 {tag_entry:url_title}
                 {tag_entry:custom_field}
         {exp:vmg_nested:tag}
 
+        {!-- Example: Profile:Edit module --}
         {exp:vmg_nested:profile:view member_id="{author_id}" prefix="author" parse="inward"}
                 {author:title}
                 {author:cf_profile_about_me}
