@@ -19,7 +19,7 @@ Requires ExpressionEngine 2.5.0+ and PHP 5.3+
                 {if blog:no_results}{redirect="404"}{/if}
         {/exp:vmg_nested:channel:entries}
 
-        {!-- Third Party Modules. All tag parametrs from the original
+        {!-- Third Party Modules. All tag parameters from the original
                 module tag can be used. --}
         {exp:vmg_nested:tag:entries prefix="tag_entry"}
                 {tag_entry:title}
