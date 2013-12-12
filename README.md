@@ -33,8 +33,8 @@ For instance, let's say you want to nest an `{exp:channel:entries}` tag inside a
         {!-- Third Party Modules. All tag parameters from the original
                 module tag can be used. --}
 
-        {!-- Example: Solspace Tag --}
-        {exp:vmg_nested:tag:entries prefix="tag_entry"}
+        {!-- Example: Solspace Tag. "marker" is one of the Tag module's parameters. --}
+        {exp:vmg_nested:tag:entries prefix="tag_entry" marker="department"}
                 {tag_entry:title}
                 {tag_entry:url_title}
                 {tag_entry:custom_field}
