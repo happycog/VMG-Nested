@@ -77,7 +77,7 @@ class Vmg_nested {
 
 			foreach(array('mod','pi') as $type)
 			{
-				$file = $path . $class .'/' . $type . '.' . $class . EXT;
+				$file = $path . $class .'/' . $type . '.' . $class . '.php';
 
 				if( ! class_exists($class) && file_exists($file))
 				{
